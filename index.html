@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Atividades LMS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
+<style>
+
+    *{
+        margin: 10;
+        padding: 10;
+    }
+
+    body{
+        background-color: #f9f9f9;
+    }
+    #check{
+        display: none;
+    }
+    #icone{
+        cursor: pointer;
+        padding: 15px;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .barra{
+        background-color: #333;
+        height: 100%;
+        width: 300px;
+        position: absolute;
+        transition: all .2s linear;
+        left: -300px;
+    }
+
+    nav{
+        width: 100%;
+        position: absolute;
+        top:60px;
+    }
+    nav a{
+        text-decoration: none;
+    }
+
+    .link{
+        background-color: #494950;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12pt;
+        transition: all .2s linear;
+        color: #f4f4f9;
+        border-bottom: 2px solid #222;
+        opacity: 0;
+        margin-top: 200px;
+    }
+
+    .link:hover{
+        background-color: #050542;
+    }
+
+    #check:checked ~ .barra{
+        transform: translateX(300px);
+    }
+
+    #check:checked ~ .barra nav a .link{
+        opacity: 1;
+        margin-top: 0;
+
+    }
+
+    p{
+        text-align: center;
+    }
+
+</style>
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label id="icon" for="check"><img src="icone.png"></label>
+
+    <div class="barra">
+        <nav>
+            <a href=""><div class="link">Atividade 1</div></a>
+            <a href=""><div class="link">Atividade 2</div></a>
+            <a href=""><div class="link">Atividade 4</div></a>
+            <a href=""><div class="link">Trabalho</div></a>
+            <a href=""><div class="link">Home</div></a>
+            <a href=""><div class="link">Home</div></a>
+        </nav>
+    </div>
+    <h1 style="float: none; text-align: center;">Atividades passadas para casa</h1>
+    <p>Todas as atividades contidas aqui fazem parte da disciplina de LMS ministrada pelo professor Victor Farias da Universidade Federal do Ceará.</p>
+    <p>Clique no botão de menu para ter acesso aos links das atividades.</p>
+
+    
+</body>
+</html>
